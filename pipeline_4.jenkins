@@ -5,7 +5,7 @@ pipeline {
 
       stage('runpy') {
         steps{      
-          sh 'python3 tests.py'
+          sh 'pip install xmlrunner && python3 tests.py'
         }
         }
 
